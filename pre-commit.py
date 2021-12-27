@@ -33,7 +33,7 @@ try:
     else:
         print('-----------------------------------------------------')
         print('                COMMIT NOT ALLOWED!                ')
-        print('                  ERRORS FOUND {}                '.format(n_errors))
+        print('                  ({}) ERRORS FOUND                '.format(n_errors))
         print('-----------------------------------------------------')
         print('                                                     ')
         for position, item in errors.items():
@@ -52,4 +52,4 @@ try:
             print(msg)
         sys.exit(1)
 except Exception as e:
-    print("{} No such file or directory".format(file_inspected))
+    print("({}) No such file or directory".format(file_inspected))
